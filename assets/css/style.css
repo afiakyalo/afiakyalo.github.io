@@ -118,7 +118,7 @@ button {
 .flex-item-large {
     flex: 3; /* This column is twice as wide as the others */
     justify-content: space-between;
-    padding: 8rem;
+    padding: 5rem;
 }
 
 .grid-container {
