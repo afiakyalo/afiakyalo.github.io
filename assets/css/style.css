@@ -1,0 +1,136 @@
+.icon-large {
+    font-size: 2em;
+    /* color: rgb(74, 107, 198); */
+}
+
+.linkedin-link {
+    color: #3053b2; /* Darker blue on hover */
+}
+
+.github-link {
+    color: rgb(58, 58, 58);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    /* padding: 50px; */
+}
+
+img {
+    border-radius: 10%;
+}
+
+a {
+    color: rgb(108, 47, 106); /* Default link color */
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+body.night-mode a {
+    color: #d5a1e1; /* Link color in night mode */
+}
+
+body.night-mode a:hover, body.night-mode a:focus {
+    color: #e0d491; /* Hover/Focus link color in night mode */
+    text-decoration: underline;
+}
+
+body.night-mode a:visited {
+    color: #9b5fc4; /* Visited link color in night mode */
+}
+
+section {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.night-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.night-mode .grid-container {
+    background-color: #1e1e1e; /* Background color for grid container */
+}
+
+body.night-mode .grid-item {
+    color: #ffffff; /* Ensures text inside grid items is white */
+    background-color: #2a2a2a; /* Optional: Darker background for grid items */
+    border: 1px solid #444444; /* Border color in night mode */
+}
+
+#toggle-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #121212;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+body.night-mode #toggle-mode {
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#name {
+    color:rgb(108, 47, 106);
+    font-family: 'Lucida Sans'; 
+    font-size: xx-large;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.flex-item-large {
+    flex: 3; /* This column is twice as wide as the others */
+    justify-content: space-between;
+    padding: 8rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr; /* 2fr means the first column is twice as wide as the others */
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <main>
+        <section id="name">
+            <header>
+                <h2>Afia Kyalo</h2>
+                <i id="toggle-mode" class="fas fa-lightbulb"></i>
+            </header>
+        </section>
+
+        <section id="home" class="flex-container">
+            <div class="flex-item">
+                <img 
+                    src="{{ '/assets/images/afia_pic.png' | relative_url }}" 
+                    alt="Picture of Afia" 
+                    width="300" 
+                    height="390"
+                    border-radius: 50%;
+                >
+            </div>
+            
+            <div class="flex-item-large">
+                <section id="about">
+                    <p style="font-weight:bold;">Exploring Code, One Step at a Time</p>
+                    <p>
+                        Welcome to my space, where curiosity and experience come together. 
+                        With 5 years in software engineering, this site is my personal learning lab for small random ideas. 
+                        As I dive deeper into full-stack development, AI, and beyond, I'll be sharing my journey,
+                        insights, and experiments. This is just the beginning, and I’m excited to see where it leads. 
+                    </p>
+                    <p>Let's explore the world of code together!</p>
+                </section>
+            </div>
+        </section>
+
+        <section id="projects" class="grid-container">
+            <div class="grid-item">
+                <header style="font-weight:bold;">RESUME</header>
+                <p>You can view or download my resume by clicking the link below:</p>
+                <a href="{{ '/assets/images/resume.pdf' | relative_url }}" target="_blank">View Resume (PDF)</a>
+                <br />
+                <br />
+                <br />
+                <header style="font-weight:bold;"> HIGHLIGHT</header>
+                <p>Featured in <a href="https://technical.ly/software-development/reallist-engineers-2022-philly/">RealLIST Engineers 2022: Meet 20 tech leaders changing Philly’s code</a></p>
+            </div>
+            <div class="grid-item">
+                <header style="font-weight:bold;">PROJECTS</header>
+                <p><strong>Affirmations:</strong> A light-weight website to boost your confidence. 
+                    Built as a Ruby on Rails application with eventual AI integration.
+                </p>
+                <br />
+                <p><b>Personal Learning Lab:</b>
+                    This website itself is a side project where I experiment with new technologies and design principles.
+                    The site is built with Jekyll and published with Github Pages.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <header style="font-weight:bold;">LEARNING JOURNAL</header>
+                <p><a href="https://rubyweekly.com/" target="_blank">Ruby Weekly</a></p>
+                <p><a href="https://tldr.tech/newsletters" target="_blank">TLDR newsletter</a></p>
+                <p><a href="https://learn.deeplearning.ai/" target="_blank">AI courses</a></p>
+                <p>Currently reading <i>The Pragmatic Programmer</i></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: afiakyalo@gmail.com</p>
+            <a href="https://www.linkedin.com/in/afia-kyalo" target="_blank" class="linkedin-link">
+                <i class="fa-brands fa-linkedin icon-large"></i>
+            </a>
+
+            <a href="https://github.com/afiakyalo" target="_blank" class="github-link">
+                <i class="fa-brands fa-github icon-large"></i>
+            </a>
+
+            <a href="https://www.instagram.com/fifiluti/" target="_blank" class="insta-link">
+                <i class="fa-brands fa-instagram icon-large"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
