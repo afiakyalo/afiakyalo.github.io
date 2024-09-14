@@ -10,25 +10,52 @@
     color: rgb(58, 58, 58);
 }
 
+.name {
+    font-style: normal;
+    font-variant: small-caps;
+    color: #4c4444;
+    font-size: 140px;
+    text-align: center;
+}
+
+.desc {
+    color: #4c4444;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 #about {
     margin-top: 4rem;
 }
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide overflow */
+    z-index: -1;
+}
 
-header {
+.main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0.2rem;
-    margin-left: 1rem;
     margin-right: 3rem;
+    padding: 40px;
+    transition: margin-left 0.3s ease;
 }
 
-img {
+.myimage {
+    border: 2px solid rgb(173, 164, 164);
+    box-shadow: 0 20px 40px hsla(325, 40%, 38%, 0.978);
     border-radius: 10%;
 }
 
 a {
-    color: rgb(108, 47, 106); /* Default link color */
+    color: rgb(155, 129, 154); /* Default link color */
     text-decoration: none;
 }
 
@@ -37,7 +64,7 @@ a:hover, a:focus {
 }
 
 body.night-mode a {
-    color: #d5a1e1; /* Link color in night mode */
+    color: rgb(155, 129, 154); /* Link color in night mode */
 }
 
 body.night-mode a:hover, body.night-mode a:focus {
@@ -55,10 +82,10 @@ section {
 }
 
 body {
-    font-family:'Courier New', Courier, monospace;
-    font-size: large;
-    background-color: #ffffff;
-    color: #000000;
+    font-size: 20px;
+    background-color: white;
+    color: #443e3e;
+    width: 100%;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -98,11 +125,11 @@ button {
     border-radius: 5px;
 }
 
-#name {
-    color:rgb(108, 47, 106);
+#logo {
+    color:rgb(148, 107, 147);
     font-family: 'Lucida Sans'; 
-    font-size: xx-large;
     margin: 0%;
+    align-self: center;
 }
 
 .flex-container {
@@ -117,6 +144,7 @@ button {
     padding: 20px;
     border-radius: 8px;
     padding: 20px;
+    align-self: center;
 }
 
 h3 {
@@ -125,7 +153,23 @@ h3 {
 
 .flex-item-large {
     flex: 3; /* This column is twice as wide as the others */
-    margin-top: 0%;
+    margin: 100px;
+}
+
+.contact {
+    margin: 50px;
+}
+
+#projects {
+    margin: 100px;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+.project-header {
+    font-weight: 200;
 }
 
 .grid-container {
@@ -146,20 +190,32 @@ h3 {
         flex-direction: column; /* Stack the items vertically */
     }
 
-    .flex-item-large,
-    .flex-item {
-        width: 100%; /* Full width on mobile view */
-        margin-bottom: 20px; /* Add some space between stacked items */
-        margin-top: 0;
+    .flex-item-large {
+        margin: 25px;
     }
 
     .flex-item:last-child {
         margin-bottom: 0; /* Remove margin from the last item */
     }
 
+    #about {
+        width: fit-content;
+    }
+
+    #projects {
+        margin: 10px;
+    }
+
+    section {
+        padding: 1px;
+        margin: 0;
+    }
     .grid-container {
-        display: block;
-        gap: 20px;
+        grid-template-columns: 1fr; /* Change to 1 column */
+    }
+
+    .grid-item {
+        text-align: center;
     }
 
     html, body {
@@ -171,3 +227,31 @@ h3 {
     }
 }
 
+.content {
+    /* margin-left: 300px; Match the banner's width */
+    padding: 40px;
+    transition: margin-left 0.3s ease;
+}
+
+nav ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items in a row */
+}
+
+nav ul li {
+    margin: 0 15px; /* Add spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c0a9ab;
+    color: #848383;
+}
