@@ -13,13 +13,15 @@ permalink: /about/
             This site is my personal learning lab for small random ideas. 
             As I dive deeper into full-stack development, AI, and beyond, I'll be sharing my journey,
             insights, and experiments.
-            I am a Software Engineer with 5 years of experience, particularly in Ruby on Rails.
+            I am a Software Engineer with 5 years of experience, particularly in Ruby on Rails and JS.
         </p>
         <p>Off the Clock:</p>
         <ul style="list-style-type: none; padding-left: 0;">
             <li> 🪚 I love a good DIY project </li>
 
             <li> 🎧 My favorite song changes every week</li>
+
+            <li> 🚶🏽‍♀️🌻 You'll find me outside any day in the spring</li>
 
             <li> 🎬 Nothing beats getting lost in a movie marathon for the ultimate escape</li>
         </ul>
