@@ -55,6 +55,6 @@ permalink: /about/
         <p><a href="https://rubyweekly.com/" target="_blank">Ruby Weekly</a></p>
         <p><a href="https://tldr.tech/newsletters" target="_blank">TLDR newsletter</a></p>
         <p><a href="https://learn.deeplearning.ai/" target="_blank">AI courses</a></p>
-        <p>Currently reading <i>The Pragmatic Programmer</i></p>
+        <p>Currently reading <i>Designing Data Intensive Applications</i></p>
     </div>
 </section>
